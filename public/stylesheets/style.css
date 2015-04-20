@@ -1,0 +1,160 @@
+@font-face{
+	font-family: SketchBlock;
+	src: url('Sketch_Block.ttf') format("truetype");
+}
+
+@font-face{
+	font-family: Note;
+	src: url('Note_this-webfont.ttf') format("truetype");
+}
+
+body{
+	background: URL('../images/wood_pattern.jpg');
+}
+
+a:link{text-decoration: none;color:#00aeef;}
+a:hover{color:#5f96c4;text-decoration: underline;}
+a:visited{text-decoration: none;color:#00aeef;}
+a:active{text-decoration: none;color:#00aeef;}
+
+#wrapper {
+	position: relative;
+	top: 1em;
+    margin: 0 auto;
+	min-height: 800px;
+    height: auto;
+	width: 1200px;
+
+	/* gradients - second red border, first red border, top white space, blue lines */
+    background-image:  -webkit-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -webkit-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -webkit-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -webkit-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -moz-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -moz-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -moz-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -moz-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -ms-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -ms-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -ms-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -ms-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  -o-linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), -o-linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), -o-linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), -o-repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-image:  linear-gradient(left, rgba(255,85,91, .2), rgba(255,85,91, .2)), linear-gradient(left, rgba(255,85,91, .8), rgba(255,85,91, .8)), linear-gradient(top, white 0px, white 69px, rgba(255,255,255,0) 70px), repeating-linear-gradient(white 0px, white 18px, #A6FFED 19px, white 20px);
+    background-size: 1px, 1px, auto, auto 20px;
+    background-repeat: repeat-y, repeat-y, no-repeat, repeat;
+    background-position: 91% 0px, 9% 0px, 0px 0px, 0px 0px;
+	
+	box-shadow: 2px 2px 15px;
+}
+
+#wrapper div:first-child {
+    margin: 0 auto;
+    padding-top: 0.2em;
+    text-align: center;
+}
+
+.sketchBlockFont {
+    font-family: SketchBlock;
+    font-size: 36pt;
+    line-height: 0px;
+    color:#00aeef;
+}
+
+.NoteFont{
+	font-family: Note;
+}
+
+h2{
+	color:#00aeef;
+	text-align: center;
+}
+
+label{
+	position:relative;
+	float: left;
+	margin-right: 60px;
+	line-height: 1.31em;
+}
+
+#bookListWrapper{
+	position: relative;
+	top: 30px;
+	left: 150px;
+}
+
+#bookList {
+	position: relative;
+	margin:0 0 30px 0;
+	left: 200px;
+}
+
+#bookList table {
+	position:relative;
+	top: -10px;
+	left: 170px;
+	border-collapse:separate;
+	border-spacing:1px;
+}
+
+#bookList table th {
+	top: -50px;
+	font-weight:600;
+	padding:10px 60px;
+	text-align:center;
+}
+
+
+#bookList table tbody {
+	position:absolute;
+	padding:0px;
+	border-collapse:collapse;
+	border-spacing:0px;
+	margin-top: 10px;
+	line-height: 1.35em;
+}
+
+#bookList table td {
+	background:rgba(80,120,255,0);
+	margin:5px 60px;
+	padding-left: 60px;
+	text-align:left;
+	width: 350px;
+}
+
+#bookDetails {
+	width:250px;
+	position:relative;
+	left: 120px;
+	top: -100px;
+	float: left;
+}
+
+#bookDetails p {
+	position: absolute;
+	line-height: 1.4em;
+	top: 45px;
+}
+
+fieldset {
+	border:0;
+	padding:0; margin:0;
+	width: 300px;
+}
+
+fieldset input{
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #5f96c4;
+	width: 150px;
+	float: right;
+	line-height: 1.3em;
+	color:#00aeef;
+}
+
+fieldset input:focus{
+	outline:none;
+}
+
+#updateWrapper{
+	display:none;
+	position: absolute;
+    left: 125px;
+    top: 316px;
+}
+
+#addWrapper{
+	position: absolute;
+    left: 125px;
+    top: 316px;
+}
